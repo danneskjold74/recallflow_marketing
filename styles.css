@@ -388,6 +388,22 @@ button:focus-visible {
   margin-right: auto;
 }
 
+/* --- Credibility --- */
+.credibility {
+  padding: var(--space-lg) 0;
+  background: var(--white);
+  border-top: 1px solid var(--gray-200);
+}
+.credibility-note {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--gray-600);
+  text-align: center;
+  max-width: 540px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
 /* --- Final CTA --- */
 .final-cta {
   padding: var(--space-2xl) 0;
