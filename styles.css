@@ -689,6 +689,96 @@ button:focus-visible {
   }
 }
 
+/* --- Content Pages (policy, terms, contact) --- */
+.content-page {
+  padding: var(--space-xl) 0 var(--space-2xl);
+  background: var(--white);
+}
+.content-page .container {
+  max-width: 680px;
+}
+.content-page h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: var(--space-xs);
+}
+.content-page .content-updated {
+  font-size: 0.82rem;
+  color: var(--gray-600);
+  margin-bottom: var(--space-lg);
+}
+.content-page h2 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-xs);
+}
+.content-page p {
+  font-size: 0.95rem;
+  color: var(--gray-800);
+  line-height: 1.7;
+  margin-bottom: var(--space-sm);
+}
+.content-page ul {
+  font-size: 0.95rem;
+  color: var(--gray-800);
+  line-height: 1.7;
+  margin-bottom: var(--space-sm);
+  padding-left: 1.4rem;
+}
+.content-page li {
+  margin-bottom: 0.3rem;
+}
+.content-page .content-note {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--gray-600);
+  border-left: 3px solid var(--gray-200);
+  padding-left: var(--space-sm);
+  margin: var(--space-md) 0;
+}
+.content-page a {
+  color: var(--teal);
+}
+
+/* Contact page specifics */
+.contact-email {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--teal);
+  margin: var(--space-sm) 0 var(--space-md);
+}
+.contact-topics {
+  list-style: none;
+  padding-left: 0;
+}
+.contact-topics li {
+  font-size: 0.95rem;
+  color: var(--gray-800);
+  padding: 0.3rem 0;
+}
+.contact-topics li::before {
+  content: '— ';
+  color: var(--gray-600);
+}
+
+/* Footer legal nav */
+.footer-legal-nav {
+  gap: var(--space-sm);
+}
+.footer-legal-nav a {
+  font-size: 0.78rem;
+  color: var(--gray-600);
+}
+.footer-legal-nav a:hover {
+  color: var(--teal-light);
+}
+
 /* --- Print --- */
 @media print {
   .site-header, .hero-ctas, .header-cta, .header-login, .final-cta {
