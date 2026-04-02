@@ -17,13 +17,37 @@
             content="See who is due back, follow up on time, and bring repeat customers back before they drift away."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://revisitiq.com" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔄</text></svg>"
+        <meta property="og:url" content="https://revisitiq.com/" />
+        <meta
+            property="og:image"
+            content="https://revisitiq.com/og-image.png"
         />
+        <meta
+            property="og:image:alt"
+            content="RevisitIQ — See who is due back and follow up before customers drift away"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="RevisitIQ — Bring Customers Back Before They Forget About You"
+        />
+        <meta
+            name="twitter:description"
+            content="RevisitIQ helps small service businesses see who is due back, follow up on time, and recover repeat revenue before customers drift away."
+        />
+        <meta
+            name="twitter:image"
+            content="https://revisitiq.com/og-image.png"
+        />
+        <meta
+            name="twitter:image:alt"
+            content="RevisitIQ — See who is due back and follow up before customers drift away"
+        />
+        <link rel="canonical" href="https://revisitiq.com/" />
+        <link rel="icon" href="/favicon.ico" sizes="48x48" />
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,6 +58,27 @@
         />
 
         <link rel="stylesheet" href="styles.css" />
+
+        <!-- Structured data: Organization + WebSite -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "name": "RevisitIQ",
+                    "url": "https://revisitiq.com/",
+                    "email": "hello@revisitiq.com",
+                    "description": "RevisitIQ helps small service businesses see who is due back, follow up on time, and recover repeat revenue before customers drift away."
+                },
+                {
+                    "@type": "WebSite",
+                    "name": "RevisitIQ",
+                    "url": "https://revisitiq.com/"
+                }
+            ]
+        }
+        </script>
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-NSQ59M11CJ"></script>
@@ -308,6 +353,109 @@
                 </p>
             </div>
         </section>
+
+        <!-- ============ FAQ ============ -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <h2 class="section-heading">Common questions</h2>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>What kinds of businesses is RevisitIQ&nbsp;for?</summary>
+                        <p>
+                            Any small service business where customers should
+                            come back on a regular cycle — hair salons,
+                            barbers, auto shops, HVAC, cleaning services,
+                            pet groomers, and similar. If your revenue depends
+                            on repeat visits, RevisitIQ is built for&nbsp;you.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Do I need to replace my booking&nbsp;software?</summary>
+                        <p>
+                            No. RevisitIQ is a lightweight recall overlay,
+                            not a booking platform. It works alongside
+                            whatever you already use — it just tracks who
+                            is due back and helps you follow&nbsp;up.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can I upload customers from my current&nbsp;system?</summary>
+                        <p>
+                            Yes. You can import customers via CSV upload,
+                            so you don't have to re-enter everyone
+                            by&nbsp;hand.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Does RevisitIQ send recall text&nbsp;messages?</summary>
+                        <p>
+                            Yes. RevisitIQ can send simple recall text
+                            messages to customers who are due back.
+                            Messages are short, practical reminders —
+                            not marketing&nbsp;blasts.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>What happens if a customer opts&nbsp;out?</summary>
+                        <p>
+                            Customers can opt out of recall messages at
+                            any time. RevisitIQ handles opt-outs
+                            automatically so you stay&nbsp;compliant.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQPage structured data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What kinds of businesses is RevisitIQ for?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Any small service business where customers should come back on a regular cycle — hair salons, barbers, auto shops, HVAC, cleaning services, pet groomers, and similar. If your revenue depends on repeat visits, RevisitIQ is built for you."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do I need to replace my booking software?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. RevisitIQ is a lightweight recall overlay, not a booking platform. It works alongside whatever you already use — it just tracks who is due back and helps you follow up."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I upload customers from my current system?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. You can import customers via CSV upload, so you don't have to re-enter everyone by hand."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Does RevisitIQ send recall text messages?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. RevisitIQ can send simple recall text messages to customers who are due back. Messages are short, practical reminders — not marketing blasts."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What happens if a customer opts out?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Customers can opt out of recall messages at any time. RevisitIQ handles opt-outs automatically so you stay compliant."
+                    }
+                }
+            ]
+        }
+        </script>
 
         <!-- ============ FINAL CTA ============ -->
         <section class="final-cta">
