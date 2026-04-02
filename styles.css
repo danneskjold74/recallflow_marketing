@@ -389,6 +389,53 @@ button:focus-visible {
   box-shadow: var(--shadow-sm);
   width: 100%;
   height: auto;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+.step-card .step-screenshot:hover {
+  box-shadow: var(--shadow-md);
+}
+.step-card .step-screenshot:focus-visible {
+  outline: 3px solid var(--teal-light);
+  outline-offset: 2px;
+}
+
+/* --- Lightbox --- */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md);
+}
+.lightbox.is-open {
+  display: flex;
+}
+.lightbox-img {
+  max-width: 100%;
+  max-height: 90vh;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+.lightbox-close {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--radius);
+  transition: background 0.15s;
+}
+.lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.15);
 }
 
 /* --- Who It's For --- */
