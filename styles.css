@@ -237,6 +237,27 @@ button:focus-visible {
   margin-top: var(--space-xs);
 }
 
+/* --- Proof Strip --- */
+.proof-strip {
+  padding: var(--space-lg) 0;
+  background: var(--white);
+  border-top: 1px solid var(--gray-200);
+  border-bottom: 1px solid var(--gray-200);
+}
+.proof-items {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+  text-align: center;
+}
+.proof-items p {
+  font-size: 0.88rem;
+  color: var(--gray-600);
+  font-weight: 600;
+  margin: 0;
+}
+
 /* --- Problem Section --- */
 .problems {
   padding: var(--space-xl) 0;
@@ -498,6 +519,10 @@ button:focus-visible {
    Responsive
    ============================================================ */
 @media (max-width: 768px) {
+  .proof-items {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
   .problems-grid,
   .workaround-grid {
     grid-template-columns: 1fr;
