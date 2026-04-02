@@ -382,6 +382,14 @@ button:focus-visible {
   margin: 0 auto;
   line-height: 1.55;
 }
+.step-card .step-screenshot {
+  margin-top: var(--space-sm);
+  border-radius: var(--radius);
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-sm);
+  width: 100%;
+  height: auto;
+}
 
 /* --- Who It's For --- */
 .built-for {
