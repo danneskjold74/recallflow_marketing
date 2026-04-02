@@ -43,6 +43,34 @@
     }
   });
 
+  // --- Nav dropdown toggle ---
+  document.querySelectorAll('.nav-dropdown-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var dropdown = btn.closest('.nav-dropdown');
+      var isOpen = dropdown.classList.contains('is-open');
+
+      // Close all dropdowns first
+      document.querySelectorAll('.nav-dropdown.is-open').forEach(function (d) {
+        d.classList.remove('is-open');
+        d.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
+      });
+
+      if (!isOpen) {
+        dropdown.classList.add('is-open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // Close dropdown on outside click
+  document.addEventListener('click', function () {
+    document.querySelectorAll('.nav-dropdown.is-open').forEach(function (d) {
+      d.classList.remove('is-open');
+      d.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
+    });
+  });
+
   // --- UTM passthrough to app links ---
   function getUtmParams() {
     try {

@@ -153,6 +153,59 @@ button:focus-visible {
   text-decoration: none;
 }
 
+/* --- Nav Dropdown --- */
+.nav-dropdown {
+  position: relative;
+}
+.nav-dropdown-toggle {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gray-800);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0.6rem;
+  transition: color 0.2s;
+}
+.nav-dropdown-toggle:hover {
+  color: var(--teal);
+}
+.nav-dropdown-toggle::after {
+  content: ' \25BE';
+  font-size: 0.7em;
+}
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  min-width: 200px;
+  z-index: 110;
+  padding: 0.4rem 0;
+}
+.nav-dropdown-menu a {
+  display: block;
+  padding: 0.55rem 1rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--gray-800);
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.nav-dropdown-menu a:hover {
+  background: var(--gray-50);
+  color: var(--teal);
+  text-decoration: none;
+}
+.nav-dropdown.is-open .nav-dropdown-menu {
+  display: block;
+}
+
 /* --- Buttons --- */
 .btn {
   display: inline-block;
@@ -453,6 +506,51 @@ button:focus-visible {
   line-height: 1.6;
 }
 
+/* --- Niche Links --- */
+.niche-links {
+  padding: var(--space-xl) 0;
+  background: var(--gray-50);
+}
+.niche-links-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+.niche-card {
+  display: block;
+  background: var(--white);
+  padding: var(--space-md);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gray-200);
+  text-decoration: none;
+  color: var(--gray-800);
+  transition: box-shadow 0.2s, border-color 0.2s;
+  text-align: center;
+}
+.niche-card:hover {
+  border-color: var(--teal-light);
+  box-shadow: var(--shadow-md);
+  text-decoration: none;
+}
+.niche-card-icon {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: var(--space-xs);
+}
+.niche-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 0.3rem;
+}
+.niche-card p {
+  font-size: 0.88rem;
+  color: var(--gray-600);
+  line-height: 1.5;
+  margin: 0;
+}
+
 /* --- Credibility --- */
 .credibility {
   padding: var(--space-lg) 0;
@@ -513,15 +611,41 @@ button:focus-visible {
 .footer-contact { font-size: 0.88rem; }
 .footer-contact a { color: var(--teal-light); }
 .footer-contact a:hover { color: var(--mint); }
+.footer-nav {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-nav a {
+  font-size: 0.82rem;
+  color: var(--gray-200);
+  text-decoration: none;
+}
+.footer-nav a:hover {
+  color: var(--teal-light);
+  text-decoration: underline;
+}
 .footer-legal { font-size: 0.78rem; color: var(--gray-600); }
 
 /* ============================================================
    Responsive
    ============================================================ */
+/* Desktop enhancement for niche grid */
+@media (min-width: 769px) {
+  .niche-links-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .proof-items {
     flex-direction: column;
     gap: var(--space-sm);
+  }
+  .nav-dropdown-toggle {
+    font-size: 0.78rem;
+    padding: 0.45rem 0.5rem;
   }
   .problems-grid,
   .workaround-grid {
