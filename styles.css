@@ -284,6 +284,9 @@ button:focus-visible {
   justify-content: center;
   margin-bottom: var(--space-sm);
 }
+.hero-ctas .btn {
+  min-width: 13.5rem;
+}
 .hero-note {
   font-size: 0.82rem;
   color: var(--gray-600);
