@@ -480,6 +480,69 @@ button:focus-visible {
   margin-top: var(--space-lg);
 }
 
+/* --- Example Recall Text Block --- */
+.example-heading {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  text-align: center;
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-xs);
+}
+.example-lede {
+  font-size: 0.95rem;
+  color: var(--gray-600);
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto var(--space-md);
+  line-height: 1.6;
+}
+.example-messages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+  max-width: 760px;
+  margin: 0 auto;
+}
+.example-message {
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-left: 4px solid var(--teal);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius);
+}
+.example-message-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--teal);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.example-message p {
+  font-size: 0.92rem;
+  color: var(--gray-800);
+  line-height: 1.55;
+  margin: 0;
+}
+.example-note {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--gray-600);
+  text-align: center;
+  margin-top: var(--space-md);
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 720px) {
+  .example-messages {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* --- Workaround Section --- */
 .workaround {
   padding: var(--space-xl) 0;
